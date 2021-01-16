@@ -1,0 +1,28 @@
+body{
+    font-family: 'Hachi Maru Pop', cursive;
+}
+.heading{
+    width: 100%;
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 55px;
+    animation-name: heading_animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.anchor{
+    font-size: 16px;
+    border-radius: 20px;
+}
+@keyframes heading_animation{
+    from{box-shadow: 10px 10px 10px #5bc0de ;}
+    to{box-shadow: 10px 10px 10px #5cb85c ;}
+}
+.success{
+    box-shadow: 8px 8px 8px #5bc0de;
+    margin-bottom: 30px;
+}
+.primary{
+    box-shadow: 8px 8px 8px #5cb85c;
+    margin-bottom: 30px;
+}
