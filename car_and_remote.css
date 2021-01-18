@@ -1,0 +1,13 @@
+canvas{
+    border-radius: 20px;
+    border: 5px 5px red;
+    box-shadow: 10px 10px 10px rgb(0, 234, 255);
+}
+.heading{
+    width: 100%;
+    font-size: 20px;
+    margin: 0px;
+}
+#status, #how_many{
+    font-size: 18px;
+}
