@@ -3,10 +3,11 @@ object = [];
 objectDetector = "";
 i = 0;
 function preload(){
-    img = loadImage('car_and_remote.jpg');
+    img = loadImage('coushins.jpg');
 }
 function setup(){
     canvas = createCanvas(350, 250);
+    
     canvas.center();
     canvas.position(450, 200);
     objectDetector = ml5.objectDetector('cocoSSD', modelLoaded);

@@ -3,12 +3,13 @@ object = [];
 objectDetector = "";
 i = 0;
 function preload(){
-    img = loadImage('car_and_remote.jpg');
+    img = loadImage('toy_room.jpg');
 }
 function setup(){
-    canvas = createCanvas(350, 250);
+    canvas = createCanvas(250, 250);
+    
     canvas.center();
-    canvas.position(450, 200);
+    canvas.position(500, 200);
     objectDetector = ml5.objectDetector('cocoSSD', modelLoaded);
     document.getElementById("status").innerHTML = "Status: Detecting Objects";
 }
@@ -29,7 +30,7 @@ function gotResult(results, error){
 }
 function draw(){
     if (status != undefined){
-        image(img, 0 ,0, 350, 250);
+        image(img, 0 ,0, 250, 250);
         for (var i = 0; i < object.length; i++){
             if(object.length == 1){
             document.getElementById("status").innerHTML = "Status: Object Detected";

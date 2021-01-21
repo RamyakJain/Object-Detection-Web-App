@@ -3,10 +3,11 @@ object = [];
 objectDetector = "";
 i = 0;
 function preload(){
-    img = loadImage('car_and_remote.jpg');
+    img = loadImage('xbox_and_controller.jpg');
 }
 function setup(){
-    canvas = createCanvas(350, 250);
+    canvas = createCanvas(400, 150);
+    
     canvas.center();
     canvas.position(450, 200);
     objectDetector = ml5.objectDetector('cocoSSD', modelLoaded);
@@ -29,7 +30,7 @@ function gotResult(results, error){
 }
 function draw(){
     if (status != undefined){
-        image(img, 0 ,0, 350, 250);
+        image(img, 0 ,0, 400, 250);
         for (var i = 0; i < object.length; i++){
             if(object.length == 1){
             document.getElementById("status").innerHTML = "Status: Object Detected";
